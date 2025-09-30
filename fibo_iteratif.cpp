@@ -1,0 +1,91 @@
+#include <iostream>
+using namespace std;
+
+// Fungsi untuk menghitung bilangan Fibonacci ke-n secara iteratif
+long long hitungFibonacci(int n) {
+    // Kasus dasar
+    if (n == 0) {
+        return 0;
+    }
+    if (n == 1) {
+        return 1;
+    }
+
+    // Variabel untuk menyimpan dua bilangan Fibonacci sebelumnya
+    long long bilangan_pertama = 0;
+    long long bilangan_kedua = 1;
+    long long hasil = 0;
+
+    // Hitung Fibonacci secara iteratif
+    for (int i = 2; i <= n; i++) {
+        hasil = bilangan_pertama + bilangan_kedua;
+        bilangan_pertama = bilangan_kedua;
+        bilangan_kedua = hasil;
+    }
+
+    return hasil;
+}
+
+// Fungsi untuk menampilkan deret Fibonacci
+void tampilkanDeretFibonacci(int jumlah) {
+    cout << "Deret Fibonacci sebanyak " << jumlah << " bilangan:" << endl;
+    for (int i = 0; i < jumlah; i++) {
+        cout << hitungFibonacci(i);
+        if (i < jumlah - 1) {
+            cout << ", ";
+        }
+    }
+    cout << endl;
+}
+
+// Fungsi untuk menampilkan bilangan Fibonacci tertentu
+void tampilkanFibonacciKe(int posisi) {
+    long long hasil = hitungFibonacci(posisi);
+    cout << "Fibonacci ke-" << posisi << " adalah: " << hasil << endl;
+}
+
+int main() {
+    int pilihan, nilai;
+
+    cout << "========================================" << endl;
+    cout << "   PROGRAM BILANGAN FIBONACCI ITERATIF  " << endl;
+    cout << "========================================" << endl;
+    cout << endl;
+
+    cout << "Pilih menu:" << endl;
+    cout << "1. Hitung Fibonacci ke-n" << endl;
+    cout << "2. Tampilkan deret Fibonacci" << endl;
+    cout << "Pilihan Anda: ";
+    cin >> pilihan;
+
+    switch(pilihan) {
+        case 1:
+            cout << "Masukkan posisi (n): ";
+            cin >> nilai;
+            if (nilai < 0) {
+                cout << "Posisi harus bilangan non-negatif!" << endl;
+            } else {
+                tampilkanFibonacciKe(nilai);
+            }
+            break;
+
+        case 2:
+            cout << "Masukkan jumlah bilangan: ";
+            cin >> nilai;
+            if (nilai <= 0) {
+                cout << "Jumlah harus bilangan positif!" << endl;
+            } else {
+                tampilkanDeretFibonacci(nilai);
+            }
+            break;
+
+        default:
+            cout << "Pilihan tidak valid!" << endl;
+    }
+
+    cout << endl;
+    cout << "========================================" << endl;
+    getchar();
+    getchar();
+    return 0;
+}
