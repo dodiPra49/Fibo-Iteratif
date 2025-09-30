@@ -14,16 +14,16 @@ long long hitungFibonacci(int n) {
     // Variabel untuk menyimpan dua bilangan Fibonacci sebelumnya
     long long bilangan_pertama = 0;
     long long bilangan_kedua = 1;
-    long long hasil = 0;
+    long long hasil_fifo = 0;
 
     // Hitung Fibonacci secara iteratif
     for (int i = 2; i <= n; i++) {
         hasil = bilangan_pertama + bilangan_kedua;
         bilangan_pertama = bilangan_kedua;
-        bilangan_kedua = hasil;
+        bilangan_kedua = hasil_fibo;
     }
 
-    return hasil;
+    return hasil_fibo;
 }
 
 // Fungsi untuk menampilkan deret Fibonacci
