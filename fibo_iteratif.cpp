@@ -84,7 +84,7 @@ int main() {
     }
 
     cout << endl;
-    cout << "========================================" << endl;
+    cout << "==============CLONE==========================" << endl;
     getchar();
     getchar();
     return 0;
