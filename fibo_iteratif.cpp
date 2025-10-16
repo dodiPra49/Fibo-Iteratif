@@ -85,10 +85,14 @@ int main() {
 
     cout << endl;
 <<<<<<< HEAD
+<<<<<<< HEAD
     cout << "==============TEST MERGE TUNGGU DARI MAIN==========================" << endl;
 =======
     cout << "==============CLONE test 2==========================" << endl;
 >>>>>>> f640c35f2571d273223e522b226820365add0c34
+=======
+    cout << "==============TEST MERGE DARI BRANCH 1==========================" << endl;
+>>>>>>> feature/test-merge1
     getchar();
     getchar();
     return 0;
