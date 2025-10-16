@@ -84,7 +84,11 @@ int main() {
     }
 
     cout << endl;
+<<<<<<< HEAD
     cout << "==============TEST MERGE TUNGGU DARI MAIN==========================" << endl;
+=======
+    cout << "==============CLONE test 2==========================" << endl;
+>>>>>>> f640c35f2571d273223e522b226820365add0c34
     getchar();
     getchar();
     return 0;
