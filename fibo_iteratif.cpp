@@ -84,7 +84,7 @@ int main() {
     }
 
     cout << endl;
-    cout << "==============TEST MERGE DARI BRANCH 1==========================" << endl;
+    cout << "==============PRA MERGE 1 TO MAIN==========================" << endl;
     getchar();
     getchar();
     return 0;
