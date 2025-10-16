@@ -84,7 +84,7 @@ int main() {
     }
 
     cout << endl;
-    cout << "==============CLONE test 2==========================" << endl;
+    cout << "==============TEST MERGE DARI BRANCH 1==========================" << endl;
     getchar();
     getchar();
     return 0;
