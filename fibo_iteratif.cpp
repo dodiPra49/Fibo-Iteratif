@@ -2,6 +2,8 @@
 using namespace std;
 
 // Fungsi untuk menghitung bilangan Fibonacci ke-n secara iteratif
+// squash commit 1
+
 long long hitungFibonacci(int n) {
     // Kasus dasar
     if (n == 0) {
@@ -47,7 +49,7 @@ void tampilkanFibonacciKe(int posisi) {
 int main() {
     int pilihan, nilai;
 
-    cout << "========================================" << endl;
+    cout << "=============squash commit 1===========================" << endl;
     cout << "   PROGRAM BILANGAN FIBONACCI ITERATIF  " << endl;
     cout << "========================================" << endl;
     cout << endl;
